@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import '../assets/styles/style.css';
-
+import Image from "next/image";
 
 const colours = {
     normal: '#A8A77A',
@@ -64,7 +64,7 @@ const Card = ({ pokemonName, image }) => {
                 </div>
                 <div className="set-section-right">
                     <div className="w-100 float-end set-background"  >
-                        <img
+                        <Image
                             src={image}
                             alt={pokemonName}
                             className="set-image"

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Card from "@/components/Card";
+import Card from "../components/Card";
 import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
-import '@/assets/styles/style.css';
+import '../assets/styles/style.css';
 
 
 function Index({ pokemonData }) {
