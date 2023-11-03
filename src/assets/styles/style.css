@@ -29,3 +29,8 @@
     background-size: cover;
     background-position: center;
 }
+
+.text-decoration-none {
+    text-decoration: none;
+    color: white; 
+}

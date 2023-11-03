@@ -55,9 +55,9 @@ const Card = ({ pokemonName, image }) => {
         <div className="w-100 border radius-card py-3 h-100 text-white " style={{ backgroundColor }}>
             <div className="d-flex justify-content-between">
                 <div className="ps-4 set-section-left"  >
-                    <div className="h5">{toSentenceCase(pokemonName)}</div>
+                    <div className="h5 text-decoration-none text-white ">{toSentenceCase(pokemonName)}</div>
                     {pokemonTypes.map((type, index) => (
-                        <div className="border text-center w-75 set-border-desc mt-1 mt-sm-1 py-sm-1" style={{ backgroundColor: `rgba(0, 0, 0, 0.1)` }} key={index}>{type}</div>
+                        <div className="border text-decoration-none text-white text-center w-75 set-border-desc mt-1 mt-sm-1 py-sm-1" style={{ backgroundColor: `rgba(0, 0, 0, 0.1)` }} key={index}>{type}</div>
                     ))}
                 </div>
                 <div className="set-section-right">

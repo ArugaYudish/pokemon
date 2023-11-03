@@ -12,7 +12,7 @@ function Index({ pokemonData }) {
             <div className="row">
                 {pokemonData.map((pokemon, index) => (
                     <div key={index} className="col-6 col-sm-4 col-lg-3 my-2">
-                        <Link href={`/detail/${pokemon.name}`} passHref>
+                        <Link className="text-decoration-none text-white"  href={`/detail/${pokemon.name}`} passHref>
                             <Card
                                 pokemonName={pokemon.name}
                                 image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`}
