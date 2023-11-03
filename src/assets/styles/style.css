@@ -1,0 +1,31 @@
+.set-border-desc{
+    border-radius: 8px;
+}
+
+.set-image{
+    width: 100%;
+}
+
+
+
+.radius-card{
+    border-radius: 24px;
+}
+
+.set-section-left{
+    width: 60%;
+}
+.set-section-right{
+    width: 40%;
+}
+.detail-radius{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    color: black;
+}
+
+.set-background{
+    background-image: url("../images/poke.png");
+    background-size: cover;
+    background-position: center;
+}
