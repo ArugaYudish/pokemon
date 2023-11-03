@@ -30,12 +30,10 @@ function getBackgroundColor(type) {
 
 function toSentenceCase(text) {
     if (typeof text !== 'string' || text.length === 0) {
-        return text; 
+        return text;
     }
     return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
 }
-
-
 
 const Card = ({ pokemonName, image }) => {
     const [pokemonTypes, setPokemonTypes] = useState([]);
@@ -59,7 +57,7 @@ const Card = ({ pokemonName, image }) => {
                 <div className="ps-4 set-section-left"  >
                     <div className="h5">{toSentenceCase(pokemonName)}</div>
                     {pokemonTypes.map((type, index) => (
-                        <div className=" border text-center w-75 set-border-desc mt-1 mt-sm-1 py-sm-1" style={{ backgroundColor: `rgba(0, 0, 0, 0.1)` }} key={index}>{type}</div>
+                        <div className="border text-center w-75 set-border-desc mt-1 mt-sm-1 py-sm-1" style={{ backgroundColor: `rgba(0, 0, 0, 0.1)` }} key={index}>{type}</div>
                     ))}
                 </div>
                 <div className="set-section-right">

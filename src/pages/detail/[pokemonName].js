@@ -244,18 +244,16 @@ function Detail({ pokemonDetail }) {
                         {activeTab === 'moves' && (
                             <div>
                                 {pokemonDetail.moves.slice(0, 6).map((move) => (
-                                    <div>
-                                        <div className="border set-border-desc px-4 py-1 my-1 text-white" style={{ backgroundColor: getRandomBackgroundColor(), display: 'inline-block' }} key={move.move.name}>
-                                            {toSentenceCase(move.move.name)}
-                                            {move.move.image && (
-                                                <Image src={move.move.image} alt={move.move.name} />
-                                            )}
-                                        </div>
+                                    <div key={move.move.name} className="border set-border-desc px-4 py-1 my-1 text-white" style={{ backgroundColor: getRandomBackgroundColor(), display: 'inline-block' }}>
+                                        {toSentenceCase(move.move.name)}
+                                        {move.move.image && (
+                                            <Image src={move.move.image} alt={move.move.name} />
+                                        )}
                                     </div>
-
                                 ))}
                             </div>
                         )}
+
 
                     </div>
                 </div>

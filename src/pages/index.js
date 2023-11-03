@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
 import '../assets/styles/style.css';
 
-
 function Index({ pokemonData }) {
     return (
         <div className="container py-4">
@@ -13,13 +12,12 @@ function Index({ pokemonData }) {
             <div className="row">
                 {pokemonData.map((pokemon, index) => (
                     <div key={index} className="col-6 col-sm-4 col-lg-3 my-2">
-                        <Link className="text-decoration-none" href={`/detail/${pokemon.name}`} passHref>
+                        <Link href={`/detail/${pokemon.name}`} passHref>
                             <Card
                                 pokemonName={pokemon.name}
                                 image={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png`}
                             />
                         </Link>
-
                     </div>
                 ))}
             </div>
